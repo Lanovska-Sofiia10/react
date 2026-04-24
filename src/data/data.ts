@@ -1,5 +1,5 @@
 import type {CourseType} from "../models/courseModels.ts";
-
+// #yiugR7&TF
 export const coursesArray:CourseType[] = [
     {
         title: 'JavaScript Complex',

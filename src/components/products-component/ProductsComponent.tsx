@@ -12,11 +12,11 @@ const ProductsConponent = ()=> {
     },[])
 
   return (
-       <>
+       <div className="flex flex-col gap-[10px] w-screen p-[10px]">
            {
                products.map(product => <ProductConponent key={product.id} item={product} />)
            }
-       </>
+       </div>
   );
 };
 

@@ -1,3 +1,9 @@
+export interface IProductsResponse {
+    products: IProduct[];
+    total: number;
+    skip: number;
+    limit: number;
+}
 export interface IProduct {
     id: number,
     title: string,
@@ -15,11 +21,11 @@ export interface IProduct {
     warrantyInformation: string,
     shippingInformation: string,
     availabilityStatus: string,
-    reviews: IReviews,
+    reviews: IReviews[],
     returnPolicy: string,
     minimumOrderQuantity: number,
     meta: IMeta,
-    images: string,
+    images: string[],
     thumbnail: string
 }
 

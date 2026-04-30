@@ -1,10 +1,10 @@
-import type {IProduct} from "../models/IProduct.ts";
+import type {IProduct, IProductsResponse} from "../models/IProduct.ts";
 
 const endpointProduct = import.meta.env.VITE_API_BASE_URL + "/products";
 
 export const getProduct = async ():Promise<IProduct[]> =>{
-    const products=await fetch(endpointProduct)
-          .then(response => response.json())
+    const response= await fetch(endpointProduct);
+    const data: IProductsResponse = await response.json();
 
-    return products;
+    return data.products;
 }

@@ -1,10 +1,11 @@
 import {Outlet} from "react-router-dom";
+import CommentsConponent from "../components/comments/CommentsComponent.tsx";
 
 const CommentPage = ()=> {
 
   return (
        <>
-           commentent
+           <CommentsConponent/>
            <Outlet/>
        </>
   );

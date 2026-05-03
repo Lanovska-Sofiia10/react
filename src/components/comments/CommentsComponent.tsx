@@ -1,14 +1,11 @@
-import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const CommentsConponent = ()=> {
-    const navigate = useNavigate();
-    const handleOnClickPlaceHolder = () =>{
-        navigate('jsonplaceholder')
-    }
+
 
     return (
         <div>
-            <button onClick={handleOnClickPlaceHolder}>json place holder</button>
+            <p><Link to="jsonplaceholder">json place holder</Link></p>
         </div>
     );
 };

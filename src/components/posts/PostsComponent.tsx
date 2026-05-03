@@ -1,18 +1,11 @@
-import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const PostsComponent = ()=> {
-    const navigate = useNavigate();
-    const handleOnClickPlaceHolder = () =>{
-        navigate('jsonplaceholder')
-    }
-    const handleOnClickDummy = () =>{
-        navigate('dummyjson')
-    }
 
   return (
        <div>
-           <button onClick={handleOnClickPlaceHolder}>json place holder</button>
-           <button onClick={handleOnClickDummy}>dummy json</button>
+           <p><Link to="jsonplaceholder">json place holder</Link></p>
+           <p><Link to="dummyjson">dummy json</Link></p>
        </div>
   );
 };
